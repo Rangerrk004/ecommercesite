@@ -34,7 +34,7 @@ jQuery(document).ready(function () {
   });
 
 
-  $(".m-viewslider").slick({
+  $('#m-viewslider').slick({
     infinite: true,
     autoplay: false,
     autoplaySpeed: 2500,
@@ -42,10 +42,10 @@ jQuery(document).ready(function () {
     dots: false,
     speed: 300,
     slidesToScroll: 1,
+    slidesToShow: 4,
     pauseOnHover: true,
     centerMode: false,
     centerPadding: "0px",
-    slidesToShow: 4,
     responsive: [
       {
         breakpoint: 1200,
@@ -53,7 +53,7 @@ jQuery(document).ready(function () {
           arrows: true,
           centerMode: false,
           centerPadding: "0px",
-          slidesToShow: 2,
+          slidesToShow: 4,
         },
       },
       {
@@ -88,19 +88,28 @@ jQuery(document).ready(function () {
     ],
   });
 
-  $("#store-items").slick({
+  $("#pro-slider").slick({
     infinite: false,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2500,
     arrows: false,
     dots: false,
     speed: 300,
     slidesToScroll: 1,
+    slidesToShow: 4,
     pauseOnHover: true,
     centerMode: false,
     centerPadding: "0px",
-    slidesToShow: 2,
     responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          arrows: false,
+          centerMode: false,
+          centerPadding: "0px",
+          slidesToShow: false,
+        },
+      },
       {
         breakpoint: 1000,
         settings: {
@@ -116,7 +125,7 @@ jQuery(document).ready(function () {
           arrows: false,
           centerMode: false,
           centerPadding: "0px",
-          slidesToShow: 4,
+          slidesToShow: 1,
         },
       },
       {
@@ -132,6 +141,8 @@ jQuery(document).ready(function () {
     ],
   });
 
+  // swiper slider js-------------------------------//
+  
 
 
 

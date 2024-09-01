@@ -7,6 +7,8 @@
     <title>Ecommerce Site</title>
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <!-- swiper link css -->
+    <link rel="stylesheet" href="./vendors/swiper-bundle.min.css" />
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./vendors/slick-slider.css">
@@ -45,9 +47,9 @@
                     </ul>
                     <form class="d-flex align-items-center gap-3">
                         <div class="d-flex">
-                            <input class="form-control me-2" type="search" aria-label="Search">
-                            <button class="btn" type="submit"><i
-                                    class="fa-solid fa-magnifying-glass"></i>Search</button>
+                            <input class="form-control" type="search" aria-label="Search">
+                            <button class="btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i>
+                                Search</button>
                         </div>
                         <i class="fa-solid fa-user"></i>
                         <i class="fa-regular fa-heart"></i>
@@ -64,11 +66,11 @@
             <div id="one-time">
                 <div class="slide">
                     <div class="hero">
-                        <div class="">
+                        <div class="hero-body">
 
-                            <h1>Shop Computers <br>& Accessories</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, tempore! <br>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                            <h1>SHOP COMPUTERS <br>& ACCERSSORIES</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Obcaecati,tempore!
+                                Lorem, ipsum dolor sit amet consectetur <br>adipisicing.</p>
                             <button type="submit" class="btn btn1">View more</button>
 
                         </div>
@@ -93,11 +95,11 @@
                 </div>
                 <div class="slide">
                     <div class="hero">
-                        <div class="">
+                        <div class="hero-body">
 
-                            <h1>Shop Computers <br>& Accessories</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, tempore! <br>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                            <h1>SHOP COMPUTERS <br>& ACCERSSORIES</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Obcaecati,tempore!
+                                Lorem, ipsum dolor sit amet consectetur <br>adipisicing.</p>
                             <button type="submit" class="btn btn1">View more</button>
 
                         </div>
@@ -123,11 +125,11 @@
 
                 <div class="slide">
                     <div class="hero">
-                        <div class="">
+                        <div class="hero-body">
 
-                            <h1>Shop Computers <br>& Accessories</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, tempore! <br>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                            <h1>SHOP COMPUTERS <br>& ACCERSSORIES</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Obcaecati,tempore!
+                                Lorem, ipsum dolor sit amet consectetur <br>adipisicing.</p>
                             <button type="submit" class="btn btn1">View more</button>
 
                         </div>
@@ -154,53 +156,50 @@
         </div>
     </section>
 
-    <!--2nd PURCHESE DITAILES------------>
+    <!-- PURCHESE DITAILES------------>
     <section>
         <div class="container py-3">
-            <div class="order-details m-viewslider">
-                <div class="slider">
-                    <div class="order-box">
-                        <img src="./Img/pexels-elle-hughes-1680172.jpg" alt="" class="img-fluid profile">
-                        <p>Hi, Joni <br>
-                            Recomendetion for you</p>
+            <div class="swiper myOrder purchese-Details">
+                <div class="swiper-wrapper">
+                    <div class=" swiper-slide">
+                        <div class="order-box">
+                            <img src="./Img/pexels-elle-hughes-1680172.jpg" alt="" class="img-fluid profile">
+                            <p>Hi, Joni <br>
+                                Recomendetion for you</p>
+                        </div>
+                    </div>
+                    <div class=" swiper-slide">
+                        <div class="order-box">
+                            <img src="./Img/box.png" alt="" class="img-fluid">
+                            <p>Your Order <br>
+                                view your order
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class=" swiper-slide">
+                        <div class="order-box">
+                            <img src="./Img/headphone.png" alt="" class="img-fluid">
+                            <p>Electronices <br>
+                                Big Seal 30%
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class=" swiper-slide">
+                        <div class="order-box">
+                            <img src="./Img/bluetooth-specer.png" alt="" class="img-fluid">
+                            <p>Home & Spekar <br>
+                                Big Seal 30%
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="slider">
-                    <div class="order-box">
-                        <img src="./Img/box.png" alt="" class="img-fluid">
-                        <p>Your Order <br>
-                            view your order
-                        </p>
-
-                    </div>
-                </div>
-                <div class="slider">
-                    <div class="order-box">
-                        <img src="./Img/headphone.png" alt="" class="img-fluid">
-                        <p>Electronices <br>
-                            Big Seal 30%
-                        </p>
-
-                    </div>
-                </div>
-                <div class="slider">
-                    <div class="order-box">
-                        <img src="./Img/bluetooth-specer.png" alt="" class="img-fluid">
-                        <p>Home & Spekar <br>
-                            Big Seal 30%
-                        </p>
-                    </div>
-                </div>
-
-
-
-
-
             </div>
         </div>
     </section>
 
-    <!-- SHOP Catergori section --------- -->
+    <!--Products SHOP Catergori section --------- -->
     <section>
         <div class="container py-3">
             <div class="cat-head">
@@ -243,36 +242,17 @@
                     </div>
                 </div>
             </div>
-
-            <!-- <div class="category">
-                <div class="category-body">
-                    <img src="./Img/beautycrime.png" alt="" class="img-fluid">
-                    <p>Beauty Picks</p>
-                </div>
-                <div class="category-body">
-                    <img src="./Img/smart-tv.png" alt="" class="img-fluid">
-                    <p>Computers & Accessories</p>
-                </div>
-                <div class="category-body">
-                    <img src="./Img/gamepad.png" alt="" class="img-fluid">
-                    <p>Video Game</p>
-                </div>
-                <div class="category-body">
-                    <img src="./Img/toy.png" alt="" class="img-fluid">
-                    <p>Toy & Gmaes</p>
-                </div>
-            </div> -->
         </div>
     </section>
-    <!-- shop downbellow 2 boxes  -->
+
     <section>
         <div class="container py-3">
             <div class="row">
-                <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="deals1">
-                        <div>
+                        <div class="more-deals">
                             <h3>Amazon Basics</h3>
-                            <p>Shop todays deals and get some awesome <br> rewards & offers</p>
+                            <p>Shop todays deals and get some awesome rewards & offers</p>
                             <button class="btn2">
                                 <p>see more <i class="fa-solid fa-arrow-right-long"></i></p>
                             </button>
@@ -280,11 +260,11 @@
                         <img src="./Img/gamepad.png" alt="" class="img-fluid">
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="deals1">
-                        <div>
+                        <div class="more-deals">
                             <h3>Amazon Basics</h3>
-                            <p>Shop todays deals and get some awesome <br> rewards & offers</p>
+                            <p>Shop todays deals and get some awesome rewards & offers</p>
                             <button class="btn2">
                                 <p>see more <i class="fa-solid fa-arrow-right-long"></i></p>
                             </button>
@@ -295,7 +275,7 @@
             </div>
         </div>
     </section>
-    <!-- delivary order box section -->
+
     <section>
         <div class="container py-3">
             <div class="delivarysection">
@@ -329,139 +309,129 @@
                     <p>view more <i class="fa-solid fa-arrow-right-long"></i></p>
                 </button>
             </div>
-            <div class="all-offers-list">
-                <div class="row">
-                    <div class="col-lg-2 col-md-4 col-sm-6">
-                        <div class="offers">
 
-                            <img src="./Img/nikeshoes.png" alt="" class="img-fluid">
-
-
-                            <div class="text-box">
-                                <p>last view</p>
-                                <h4>Nike Air man light <br> Red shoes</h4>
-                                <div class="rating-2">
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <em>1298 reviews</em>
-                                </div>
-                                <span>$129</span>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="items swiper-slide">
+                        <img src="./Img/nikeshoes.png" alt="" class="img-fluid">
+                        <div class="text-box">
+                            <p>last view</p>
+                            <h4>Nike Air man light <br> Red shoes</h4>
+                            <div class="rating-2">
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <em>1298 reviews</em>
                             </div>
+                            <span>$129</span>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6">
-                        <div class="offers">
-
-                            <img src="./Img/nikeshoes.png" alt="" class="img-fluid">
-
-                            <div class="text-box">
-                                <p>last view</p>
-                                <h4>Nike Air man light <br> Red shoes</h4>
-                                <div class="rating-2">
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <em>1298 reviews</em>
-                                </div>
-                                <span>$129</span>
+                    <div class="items swiper-slide">
+                        <img src="./Img/nikeshoes.png" alt="" class="img-fluid">
+                        <div class="text-box">
+                            <p>last view</p>
+                            <h4>Nike Air man light <br> Red shoes</h4>
+                            <div class="rating-2">
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <em>1298 reviews</em>
                             </div>
+                            <span>$129</span>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6">
-                        <div class="offers">
-
-                            <img src="./Img/nikeshoes.png" alt="" class=" img-fluid">
-                            <div class="text-box">
-                                <p>last view</p>
-                                <h4>Nike Air man light <br> Red shoes</h4>
-                                <div class="rating-2">
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <em>1298 reviews</em>
-                                </div>
-                                <span>$129</span>
+                    <div class="items swiper-slide">
+                        <img src="./Img/nikeshoes.png" alt="" class="img-fluid">
+                        <div class="text-box">
+                            <p>last view</p>
+                            <h4>Nike Air man light <br> Red shoes</h4>
+                            <div class="rating-2">
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <em>1298 reviews</em>
                             </div>
-
+                            <span>$129</span>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6">
-                        <div class="offers">
-
-                            <img src="./Img/nikeshoes.png" alt="" class="img-fluid">
-                            <div class="text-box">
-                                <p>last view</p>
-                                <h4>Nike Air man light <br> Red shoes</h4>
-                                <div class="rating-2">
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <em>1298 reviews</em>
-                                </div>
-                                <span>$129</span>
+                    <div class="items swiper-slide">
+                        <img src="./Img/nikeshoes.png" alt="" class="img-fluid">
+                        <div class="text-box">
+                            <p>last view</p>
+                            <h4>Nike Air man light <br> Red shoes</h4>
+                            <div class="rating-2">
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <em>1298 reviews</em>
                             </div>
-
+                            <span>$129</span>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6">
-                        <div class="offers">
-
-                            <img src="./Img/nikeshoes.png" alt="" class=" img-fluid">
-                            <div class="text-box">
-                                <p>last view</p>
-                                <h4>Nike Air man light <br> Red shoes</h4>
-                                <div class="rating-2">
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <em>1298 reviews</em>
-                                </div>
-                                <span>$129</span>
+                    <div class="items swiper-slide">
+                        <img src="./Img/nikeshoes.png" alt="" class="img-fluid">
+                        <div class="text-box">
+                            <p>last view</p>
+                            <h4>Nike Air man light <br> Red shoes</h4>
+                            <div class="rating-2">
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <em>1298 reviews</em>
                             </div>
-
+                            <span>$129</span>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6">
-                        <div class="offers">
-
-                            <img src="./Img/nikeshoes.png" alt="" class="img-fluid">
-                            <div class="text-box">
-                                <p>last view</p>
-                                <h4>Nike Air man light <br> Red shoes</h4>
-                                <div class="rating-2">
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <em>1298 reviews</em>
-                                </div>
-                                <span>$129</span>
+                    <div class="items swiper-slide">
+                        <img src="./Img/nikeshoes.png" alt="" class="img-fluid">
+                        <div class="text-box">
+                            <p>last view</p>
+                            <h4>Nike Air man light <br> Red shoes</h4>
+                            <div class="rating-2">
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <em>1298 reviews</em>
                             </div>
-
+                            <span>$129</span>
                         </div>
                     </div>
-
+                    <div class="items swiper-slide">
+                        <img src="./Img/nikeshoes.png" alt="" class="img-fluid">
+                        <div class="text-box">
+                            <p>last view</p>
+                            <h4>Nike Air man light <br> Red shoes</h4>
+                            <div class="rating-2">
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <em>1298 reviews</em>
+                            </div>
+                            <span>$129</span>
+                        </div>
+                    </div>
                 </div>
+                <!-- <div class="swiper-pagination"></div> -->
             </div>
-
-
 
         </div>
     </section>
 
-    <!--Amazon top offers ----------->
+    <!--All Amazon top offers ----------->
     <section>
         <div class="container py-3">
             <div class="cat-head">
@@ -470,119 +440,112 @@
                     <p>view more <i class="fa-solid fa-arrow-right-long"></i></p>
                 </button>
             </div>
-            <div class="all-offers-list">
-                <div class="row">
-                    <div class="col-lg-2 col-md-4 col-sm-6">
-                        <div class="offers">
-                            <img src="./Img/bluetooth-specer.png" alt="">
-                            <div class="text-box">
-                                <p>last view</p>
-                                <h4>Nike Air man light <br> Red shoes</h4>
-                                <div class="rating-2">
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <em>1298 reviews</em>
-                                </div>
-                                <span>$129</span>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+
+                    <div class="items swiper-slide">
+                        <img src="./Img/bluetooth-specer.png" alt="" class="img-fluid">
+                        <div class="text-box">
+                            <p>last view</p>
+                            <h4>Nike Air man light <br> Red shoes</h4>
+                            <div class="rating-2">
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <em>1298 reviews</em>
                             </div>
+                            <span>$129</span>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6">
-                        <div class="offers">
-                            <img src="./Img/smart-tv.png" alt="">
-                            <div class="text-box">
-                                <p>last view</p>
-                                <h4>Nike Air man light <br> Red shoes</h4>
-                                <div class="rating-2">
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <em>1298 reviews</em>
-                                </div>
-                                <span>$129</span>
+
+                    <div class="items swiper-slide">
+                        <img src="./Img/smart-tv.png" alt="" class="img-fluid">
+                        <div class="text-box">
+                            <p>last view</p>
+                            <h4>Nike Air man light <br> Red shoes</h4>
+                            <div class="rating-2">
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <em>1298 reviews</em>
                             </div>
+                            <span>$129</span>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6">
-                        <div class="offers">
-                            <img src="./Img/hairdrayer.png" alt="">
-                            <div class="text-box">
-                                <p>last view</p>
-                                <h4>Nike Air man light <br> Red shoes</h4>
-                                <div class="rating-2">
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <em>1298 reviews</em>
-                                </div>
-                                <span>$129</span>
+                    <div class="items swiper-slide">
+                        <img src="./Img/hairdrayer.png" alt="" class="img-fluid">
+                        <div class="text-box">
+                            <p>last view</p>
+                            <h4>Nike Air man light <br> Red shoes</h4>
+                            <div class="rating-2">
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <em>1298 reviews</em>
                             </div>
+                            <span>$129</span>
+                        </div>
+
+                    </div>
+
+                    <div class="items swiper-slide">
+                        <img src="./Img/toy.png" alt="" class="img-fluid">
+                        <div class="text-box">
+                            <p>last view</p>
+                            <h4>Nike Air man light <br> Red shoes</h4>
+                            <div class="rating-2">
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <em>1298 reviews</em>
+                            </div>
+                            <span>$129</span>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6">
-                        <div class="offers">
-                            <img src="./Img/toy.png" alt="">
-                            <div class="text-box">
-                                <p>last view</p>
-                                <h4>Nike Air man light <br> Red shoes</h4>
-                                <div class="rating-2">
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <em>1298 reviews</em>
-                                </div>
-                                <span>$129</span>
+                    <div class="items swiper-slide">
+                        <img src="./Img/watch.png" alt="" class="img-fluid">
+                        <div class="text-box">
+                            <p>last view</p>
+                            <h4>Nike Air man light <br> Red shoes</h4>
+                            <div class="rating-2">
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <em>1298 reviews</em>
                             </div>
+                            <span>$129</span>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6">
-                        <div class="offers">
-                            <img src="./Img/watch.png" alt="">
-                            <div class="text-box">
-                                <p>last view</p>
-                                <h4>Nike Air man light <br> Red shoes</h4>
-                                <div class="rating-2">
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <em>1298 reviews</em>
-                                </div>
-                                <span>$129</span>
+
+                    <div class="items swiper-slide">
+                        <img src="./Img/watch.png" alt="" class="img-fluid">
+                        <div class="text-box">
+                            <p>last view</p>
+                            <h4>Nike Air man light <br> Red shoes</h4>
+                            <div class="rating-2">
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <em>1298 reviews</em>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6">
-                        <div class="offers">
-                            <img src="./Img/watch.png" alt="">
-                            <div class="text-box">
-                                <p>last view</p>
-                                <h4>Nike Air man light <br> Red shoes</h4>
-                                <div class="rating-2">
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <em>1298 reviews</em>
-                                </div>
-                                <span>$129</span>
-                            </div>
+                            <span>$129</span>
                         </div>
                     </div>
                 </div>
-
             </div>
+
         </div>
     </section>
 
@@ -648,114 +611,107 @@
                     <p>All Categories <i class="fa-solid fa-arrow-right-long"></i></p>
                 </button>
             </div>
-            <div class="all-offers-list">
-                <div class="row">
-                    <div class="col-lg-2 col-md-4 col-sm-12">
-                        <div class="offers">
-                            <img src="./Img/bluetooth-specer.png" alt="">
-                            <div class="text-box">
-                                <p>last view</p>
-                                <h4>Nike Air man light <br> Red shoes</h4>
-                                <div class="rating-2">
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <em>1298 reviews</em>
-                                </div>
-                                <span>$129</span>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+
+                    <div class="items swiper-slide">
+                        <img src="./Img/bluetooth-specer.png" alt="" class="img-fluid">
+                        <div class="text-box">
+                            <p>last view</p>
+                            <h4>Nike Air man light <br> Red shoes</h4>
+                            <div class="rating-2">
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <em>1298 reviews</em>
                             </div>
+                            <span>$129</span>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6">
-                        <div class="offers">
-                            <img src="./Img/smart-tv.png" alt="">
-                            <div class="text-box">
-                                <p>last view</p>
-                                <h4>Nike Air man light <br> Red shoes</h4>
-                                <div class="rating-2">
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <em>1298 reviews</em>
-                                </div>
-                                <span>$129</span>
+
+                    <div class="items swiper-slide">
+                        <img src="./Img/smart-tv.png" alt="" class="img-fluid">
+                        <div class="text-box">
+                            <p>last view</p>
+                            <h4>Nike Air man light <br> Red shoes</h4>
+                            <div class="rating-2">
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <em>1298 reviews</em>
                             </div>
+                            <span>$129</span>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6">
-                        <div class="offers">
-                            <img src="./Img/headphone.png" alt="">
-                            <div class="text-box">
-                                <p>last view</p>
-                                <h4>Nike Air man light <br> Red shoes</h4>
-                                <div class="rating-2">
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <em>1298 reviews</em>
-                                </div>
-                                <span>$129</span>
+                    <div class="items swiper-slide">
+                        <img src="./Img/hairdrayer.png" alt="" class="img-fluid">
+                        <div class="text-box">
+                            <p>last view</p>
+                            <h4>Nike Air man light <br> Red shoes</h4>
+                            <div class="rating-2">
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <em>1298 reviews</em>
                             </div>
+                            <span>$129</span>
+                        </div>
+
+                    </div>
+
+                    <div class="items swiper-slide">
+                        <img src="./Img/toy.png" alt="" class="img-fluid">
+                        <div class="text-box">
+                            <p>last view</p>
+                            <h4>Nike Air man light <br> Red shoes</h4>
+                            <div class="rating-2">
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <em>1298 reviews</em>
+                            </div>
+                            <span>$129</span>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6">
-                        <div class="offers">
-                            <img src="./Img/bluetoothearphones.png" alt="">
-                            <div class="text-box">
-                                <p>last view</p>
-                                <h4>Nike Air man light <br> Red shoes</h4>
-                                <div class="rating-2">
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <em>1298 reviews</em>
-                                </div>
-                                <span>$129</span>
+                    <div class="items swiper-slide">
+                        <img src="./Img/watch.png" alt="" class="img-fluid">
+                        <div class="text-box">
+                            <p>last view</p>
+                            <h4>Nike Air man light <br> Red shoes</h4>
+                            <div class="rating-2">
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <em>1298 reviews</em>
                             </div>
+                            <span>$129</span>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6">
-                        <div class="offers">
-                            <img src="./Img/watch.png" alt="">
-                            <div class="text-box">
-                                <p>last view</p>
-                                <h4>Nike Air man light <br> Red shoes</h4>
-                                <div class="rating-2">
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <em>1298 reviews</em>
-                                </div>
-                                <span>$129</span>
+
+                    <div class="items swiper-slide">
+                        <img src="./Img/watch.png" alt="" class="img-fluid">
+                        <div class="text-box">
+                            <p>last view</p>
+                            <h4>Nike Air man light <br> Red shoes</h4>
+                            <div class="rating-2">
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <em>1298 reviews</em>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6">
-                        <div class="offers">
-                            <img src="./Img/headphone.png" alt="">
-                            <div class="text-box">
-                                <p>last view</p>
-                                <h4>Nike Air man light <br> Red shoes</h4>
-                                <div class="rating-2">
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <em>1298 reviews</em>
-                                </div>
-                                <span>$129</span>
-                            </div>
+                            <span>$129</span>
                         </div>
                     </div>
                 </div>
@@ -763,33 +719,37 @@
         </div>
     </section>
 
-    <!-- recent views more slider it is------------>
     <section>
         <div class="container py-3">
-            <div class="order-details m-viewslider">
+            <div class="order-details" id="m-viewslider">
                 <div class="slider">
-                    <div class="order-box"><img src="./Img/bluetoothear.png" alt="" class="img-fluid">
+                    <div class="order-box">
+                        <img src="./Img/pexels-elle-hughes-1680172.jpg" alt="" class="img-fluid profile">
+                        <p>Hi, Joni <br>
+                            Recomendetion for you</p>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="order-box">
+                        <img src="./Img/box.png" alt="" class="img-fluid">
+                        <p>Your Order <br>
+                            view your order
+                        </p>
+
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="order-box">
+                        <img src="./Img/headphone.png" alt="" class="img-fluid">
                         <p>Electronices <br>
                             Big Seal 30%
                         </p>
+
                     </div>
                 </div>
                 <div class="slider">
-                    <div class="order-box"><img src="./Img/watch.png" alt="" class="img-fluid">
-                        <p>Home & Spekar <br>
-                            Big Seal 30%
-                        </p>
-                    </div>
-                </div>
-                <div class="slider">
-                    <div class="order-box"><img src="./Img/headphone.png" alt="" class="img-fluid">
-                        <p>Electronices <br>
-                            Big Seal 30%
-                        </p>
-                    </div>
-                </div>
-                <div class="slider">
-                    <div class="order-box"><img src="./Img/bluetooth-specer.png" alt="" class="img-fluid">
+                    <div class="order-box">
+                        <img src="./Img/bluetooth-specer.png" alt="" class="img-fluid">
                         <p>Home & Spekar <br>
                             Big Seal 30%
                         </p>
@@ -799,7 +759,6 @@
         </div>
     </section>
 
-    <!-- delivary sec copy version -->
     <section>
         <div class="container py-3">
             <div class="subscribesection">
@@ -825,30 +784,60 @@
     </section>
 
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-3">
-                    <div class="footer-body">
-                        <h3>Get in tuch </h3>
-                        <a href="#">Home</a>
-                        <a href="#">Contact Us</a>
-                        <a href="#">Blog</a>
-                        <a href="#">About Us</a>
+        <div class="container py-3">
+            <div class="footersection">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="footer-body">
+                            <h5>Get in tuch </h5>
+                            <div class="footer-link">
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-3">
-                    <div class="footer-body">
-                        <h3>Get in tuch </h3>
+                    <div class="col-3">
+                        <div class="footer-body">
+                            <h5>Get in tuch </h5>
+                            <div class="footer-link">
+                                <ul>
+                                    <li><a href="#">Sell produts on Amazon</a></li>
+                                    <li><a href="#">Sell bags on Amazon</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-3">
-                    <div class="footer-body">
-                        <h3>Get in tuch </h3>
+                    <div class="col-3">
+                        <div class="footer-body">
+                            <h5>Let Us Help You</h5>
+                            <div class="footer-link">
+                                <ul>
+                                    <li><a href="#">Your Amazon</a></li>
+                                    <li><a href="#">Your Order</a></li>
+                                    <li><a href="#">Shoping Bags & Pants</a></li>
+                                    <li><a href="#">help</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-3">
-                    <div class="footer-body">
-                        <h3>Get in tuch </h3>
+                    <div class="col-3">
+                        <div class="footer-body">
+                            <h5>Amazon Paymant Produts</h5>
+                            <div class="footer-link">
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -859,8 +848,69 @@
     <script src="./vendors/bootstrap.bundle.min.js"> </script>
     <script src="vendors/jquery.min.js"></script>
     <script src="vendors/slick.min.js"></script>
+    <!-- swiper link js -->
+    <script src="./vendors/swiper.bundle.min.js"></script>
     <script src="script.js"></script>
+    <script>
+        var swiper = new Swiper(".myOrder", {
+            slidesPerView: 5,
+            spaceBetween: 30,
+            freeMode: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
 
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 50,
+                },
+            },
+        });
+        // All offercs slider codes///
+        
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 5,
+            spaceBetween: 30,
+            freeMode: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 50,
+                },
+            },
+        });
+    </script>
 </body>
 
 </html>
