@@ -464,7 +464,11 @@ h3,
 .footersection {
     background: var(--skypink);
     padding: 0px 20px;
-    height: 200px;
+    height: 230px;
+}
+
+.footer-body {
+    border: 1px solid black;
 }
 
 .footer-body a {
@@ -475,20 +479,34 @@ h3,
     padding-left: 0px;
 }
 
-/* smartphones size-------- */
-@media screen and (max-width: 320px) {
+/* smartphones size X-Small devices (portrait phones,// Small devices (landscape phones, 576px and up)-------- */
+@media screen and (max-width: 576px) {
 
     .hero {
         flex-direction: column;
     }
 
     .row {
-        display: inline-block;
+        display: block;
         margin: 0 auto;
+    }
+
+    .order-box {
+        display: flexbox;
+        justify-content: space-between;
+        gap: 100px;
     }
 
     .offers {
         margin: auto;
+    }
+
+    .offer-body-img {
+        display: none;
+    }
+
+    .subs {
+        padding-top: 10px;
     }
 
     .subs h2 {
@@ -497,11 +515,17 @@ h3,
 
 
     .delivarysection {
-        height: 530px;
+        padding: 1px 0px;
+        /* height: 490px; */
+    }
+
+    .footersection {
+        height: 100%;
     }
 }
 
-/* mobile size/Ipad mini (md) tablets size-------- */
+/* mobile size/Ipad mini (md) tablets size (mediam device tablets 768px)-------- */
+
 @media (max-width: 768px) {
     header {
         padding: 0px 38px;
@@ -582,8 +606,8 @@ h3,
     }
 }
 
-/* landscape /desktop size-------- */
-@media (max-width: 1024px) {
+/* // Large devices (desktops, 992px and up) */
+@media(max-width:992px) {
     header {
         padding: 0x 30px;
     }
@@ -596,10 +620,10 @@ h3,
         font-size: 25px;
     }
 
-    .category-body {
+    /* .category-body {
         width: 220px;
         text-align: center;
-    }
+    } */
 
     .offers {
         margin: auto;
@@ -616,35 +640,48 @@ h3,
     .subs img {
         margin-left: 120px;
     }
-
-
 }
 
 
-/* ipad pro / large screen size-------- */
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+    .hero{
+        max-height: 500px;
+    }
+    .hero h1{
+        font-size: 30px;
+    }
+    .prizebox{
+        width: 220px;
+        margin-right: -50px;
+    }
+    .hero-img{
+        width: 220px;
+    }
+    
+    .order-box p{
+        font-size: 15px;
+    }
+    .category-body{
+        width: 230px;
+    }
+}
+
+
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
 @media (max-width: 1440px) {
     header {
         padding: 0px 35px;
     }
 
-    /* .hero {
-        flex-direction: column;
-        height: 100%;
-        padding: 50px 0px;
-    } */
-
     .hero-body {
         float: inline-start;
     }
 
-    /* .category-body {
-        width: 220px;
-        text-align: center;
-    } */
-
     .card-body {
         display: flex;
         justify-content: center;
-        /* align-items: center; */
     }
 }
