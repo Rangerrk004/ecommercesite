@@ -1,5 +1,6 @@
 :root {
     --grey: rgb(239, 239, 239);
+    --darkgrey: rgb(202, 198, 198);
     --skypink: rgba(248, 227, 230, 0.949);
     --white: white;
     --yellow: rgb(245, 221, 9);
@@ -246,11 +247,10 @@ header {
     border-radius: 50%;
 }
 
-/* .order-box:hover {
-    cursor: pointer;
+.order-box:hover {
+    border-bottom: 3px solid var(--darkgrey);
     width: fit-content;
-    border-bottom: 2px var(--yellow);
-} */
+}
 
 
 
@@ -322,10 +322,6 @@ h3,
 }
 
 /* ----------------------------------------------------- */
-
-.subscribesection {
-    background: var(--grey);
-}
 
 .deli {
     padding-left: 50px;
@@ -453,12 +449,24 @@ h3,
 }
 
 /* subscribe section ------------------- */
+
+.subscribesection {
+    height: 260px;
+    background: var(--grey);
+}
+
 .subs {
     padding-left: 20px;
 }
 
+.subs h3,
+.deli h3 {
+    font-weight: bold;
+}
+
 .subs img {
-    width: 149px;
+    width: 155px;
+    margin-left: 100px;
 }
 
 .footersection {
@@ -484,6 +492,7 @@ h3,
 
     .hero {
         flex-direction: column;
+        padding: 20px 20px;
     }
 
     .row {
@@ -495,6 +504,10 @@ h3,
         display: flexbox;
         justify-content: space-between;
         gap: 100px;
+    }
+
+    .order-box:hover {
+        border-bottom: none;
     }
 
     .offers {
@@ -513,6 +526,9 @@ h3,
         font-size: 15px;
     }
 
+    .subscribesection {
+        height: 100%;
+    }
 
     .delivarysection {
         padding: 1px 0px;
@@ -532,7 +548,15 @@ h3,
     }
 
     .hero {
+        padding: 20px 20px;
         flex-direction: column;
+        height: 100vh;
+    }
+
+    .prizebox {}
+
+    .hero-img {
+        width: 50%;
     }
 
     .category-body {
@@ -604,6 +628,7 @@ h3,
     .footer-body h5 {
         font-size: 15px;
     }
+    
 }
 
 /* // Large devices (desktops, 992px and up) */
@@ -646,24 +671,32 @@ h3,
 
 /* // X-Large devices (large desktops, 1200px and up) */
 @media (max-width: 1200px) {
-    .hero{
-        max-height: 500px;
+
+    .hero {
+        max-height: 400px;
     }
-    .hero h1{
+
+    .hero-body h1 {
         font-size: 30px;
     }
-    .prizebox{
-        width: 220px;
-        margin-right: -50px;
+
+    .hero-body p {
+        width: 450px;
     }
-    .hero-img{
-        width: 220px;
+
+    .prizebox {
+        margin-left: 90px;
     }
-    
-    .order-box p{
+
+    /* .hero-img {
+        width: 220px;
+    } */
+
+    .order-box p {
         font-size: 15px;
     }
-    .category-body{
+
+    .category-body {
         width: 230px;
     }
 }
