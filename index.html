@@ -18,22 +18,21 @@
 
 <body>
 
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-trensperant">
-            <div class="container-fluid nav-body">
-                <div class="logo">
-                    <a href="#">
-                        <p>Am<i class="fa-brands fa-amazon"></i>zon</p>
-                    </a>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+    <header class="bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon"
+                        width="100">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarScroll">
-                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">All</a>
+                            <a class="nav-link active" href="#">All</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Today Deals</a>
@@ -45,22 +44,33 @@
                             <a class="nav-link" href="#">Registry & Gifting</a>
                         </li>
                     </ul>
-                    <form class="d-flex align-items-center gap-3">
-                        <div class="d-flex">
-                            <input class="form-control" type="search" aria-label="Search">
-                            <button class="btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i>
-                                Search</button>
-                        </div>
-                        <i class="fa-solid fa-user"></i>
-                        <i class="fa-regular fa-heart"></i>
-                        <i class="fa-solid fa-cart-shopping"></i>
+                    <form class="d-flex">
+                        <input class="form-control me-2 search-input" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-user"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-regular fa-heart"></i> </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
+
     </header>
     <!-- HERO SECTION-------------->
-
     <section>
         <div class="container">
             <div id="one-time">
@@ -883,7 +893,7 @@
             },
         });
         // All offercs slider codes///
-        
+
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 5,
             spaceBetween: 30,

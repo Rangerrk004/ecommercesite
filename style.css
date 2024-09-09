@@ -14,6 +14,36 @@
 
 /*-------------------------------- CUSTOM CODES --------------------------*/
 
+
+/* Custom styles to match Amazon-like navbar */
+.navbar-brand {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.navbar-nav a {
+    font-weight: 500;
+}
+
+.navbar-nav a:hover {
+    text-decoration: underline;
+}
+
+.search-input {
+    width: 400px;
+}
+
+.navbar-collapse {
+    justify-content: space-between;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
 a {
     text-decoration: none;
     list-style: none;
@@ -464,7 +494,6 @@ h3,
 .footersection {
     background: var(--skypink);
     padding: 0px 20px;
-    height: 200px;
 }
 
 .footer-body a {
@@ -646,5 +675,11 @@ h3,
         display: flex;
         justify-content: center;
         /* align-items: center; */
+    }
+}
+
+@media (max-width: 768px) {
+    .search-input {
+        width: 100%;
     }
 }
